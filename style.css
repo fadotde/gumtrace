@@ -1,0 +1,178 @@
+:root {
+    --white: #fbf5ef;
+    --yellow: #f2d3ab;
+    --pink: #c69fa5;
+    --purple: #8b6d9c;
+    --blue: #494d7e;
+    --darkblue: #272744;
+	--shinypink: #fe9591;
+	--lightpink: #fa8c8b;
+	--lightred: #f94c40;
+	--black: #040c19;
+  }
+body {
+    letter-spacing: 3px;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 400;
+    font-family: "Cherry Bomb One", system-ui;
+    color: white;
+    background-color: var(--shinypink);
+    overflow-x: hidden;
+}
+
+#gum {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+span {
+    color: var(--yellow);
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+
+
+.wave-top {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-top svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 237px;
+}
+
+.wave-top .shape-fill {
+    fill: #d37673;
+}
+
+.wave-bottom .shape-fill {
+    fill: #d37673;
+}
+
+.wave-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 237px;
+}
+
+.info {
+	position: relative;
+    background-color: var(--lightpink);
+	padding-bottom: 300px;
+	margin-top: -70px;
+	
+}
+
+.info p {
+	text-align: center;
+    font-size: 25px;
+	letter-spacing: 1px;
+	
+	text-shadow:
+        -1px -1px 0 rgba(0,0,0,0.25),
+         1px -1px 0 rgba(0,0,0,0.25),
+        -1px  1px 0 rgba(0,0,0,0.25),
+         1px  1px 0 black;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+	color: white;
+	
+	text-shadow:
+        -1px -1px 0 rgba(0,0,0,0.25),
+         1px -1px 0 rgba(0,0,0,0.25),
+        -1px  1px 0 rgba(0,0,0,0.25),
+         1px  1px 0 black;
+}
+
+
+.navbar {
+	position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0 0 50px 50px;
+}
+
+.navbar a {
+	text-shadow:
+        -1px -1px 0 rgba(0,0,0,0.25),
+         1px -1px 0 rgba(0,0,0,0.25),
+        -1px  1px 0 rgba(0,0,0,0.25),
+         1px  1px 0 black;
+    color: #f7dff2;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+	letter-spacing: 1px;
+	/*background: rgba(0,0,0,0.3);*/
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('chocohome.png') center/cover no-repeat;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bg-overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('set-of-candy.png') center/cover no-repeat;
+    opacity: 0.2;
+    pointer-events: none;
+	z-index: -1;
+}
+
+
+
+
+
